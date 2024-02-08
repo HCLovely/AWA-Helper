@@ -1,0 +1,4 @@
+- 新增：AWA Manager Server, 首次更新此版本请阅读说明！！！
+- 优化：WebUI相关
+- 移除：自动登录获取cookie
+- 修复：AWA界面改版导致的一系列问题

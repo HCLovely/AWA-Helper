@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWA-Helper</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <script src="/js/jquery.slim.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/dayjs.min.js"></script>
+  <style>
+    font.green{color: darkgreen;}
+    font.gray{color: gray;}
+    font.blue{color: blue;}
+    font.yellow{color: darkorange;}
+    font.red{color: red;}
+    h1,h2{text-align: center;}
+    #quest-info *{border: 1px solid #000;}
+    body{margin-top: 20px;}
+    footer{text-align: center;color: grey;}
+    footer a{text-decoration: none;}
+    #log-area{height: 500px;overflow-y: auto;}
+  </style>
+  <script>
+    var lang = "__LANG__";
+    var I18n = __I18N__;
+  </script>
+</head>
+<body>
+  <h1 class="fw-bold">AWA-Helper</h1>
+  <div class="d-flex gap-5 justify-content-center" style="max-width: 800px;margin: auto;">
+    <table id="quest-info" class="table">
+      <thead>
+        <tr id="table-head">
+          <th scope="col">Quest</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="daily-quest-0">
+          <th scope="row"></th>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+        <tr id="daily-quest-1" style="display:none;">
+          <th scope="row"></th>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+        <tr id="daily-quest-2" style="display:none;">
+          <th scope="row"></th>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+        <tr id="daily-quest-3" style="display:none;">
+          <th scope="row"></th>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+        <tr id="daily-quest-4" style="display:none;">
+          <th scope="row"></th>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+        <tr id="daily-quest-5" style="display:none;">
+          <th scope="row"></th>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+
+        <tr id="time-on-site">
+          <th scope="row"></th>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+        <tr id="watch-twitch">
+          <th scope="row"></th>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+        <tr id="steam-quest-0">
+          <th scope="row"></th>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+        <tr id="steam-quest-1" style="display:none;">
+          <th scope="row"></th>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+        <tr id="steam-quest-2" style="display:none;">
+          <th scope="row"></th>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+        <tr id="steam-quest-3" style="display:none;">
+          <th scope="row"></th>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+        <tr id="steam-quest-4" style="display:none;">
+          <th scope="row"></th>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+        <tr id="steam-event" style="display:none;">
+          <th scope="row"></th>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="mb-4 bg-light rounded-3" style="max-width: 900px;margin: 10px auto;">
+    <div class="container-fluid">
+      <h2 id="log-title" class="display-6">Log</h2>
+      <div id="log-area"></div>
+    </div>
+  </div>
+  <footer><a href="https://github.com/HCLonely/AWA-Helper" target="_blank">AWA-Helper</a> By <a href="https://github.com/HCLonely" target="_blank">HCLonely</a></footer>
+  <script src="/js/index.js"></script>
+</body>
+</html>
